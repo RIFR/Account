@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="account-component-domain" />
+        <module name="account-component-dao-impl" />
+        <module name="account-component-test-common" />
+        <module name="account-component-service" />
+        <module name="account-component-entity" />
+        <module name="account-component-mapper" />
+        <module name="account-component-dao" />
+        <module name="account-component-service-impl" />
+        <module name="account-component-test-integration" />
+        <module name="account-component-mirror" />
+        <module name="account-component-pu" />
+        <module name="account-component-client" />
+        <module name="account-component-pu-mirror" />
+        <module name="account-component-test-unit" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account" target="1.8" />
+      <module name="account-api-client" target="1.8" />
+      <module name="account-api-common" target="1.8" />
+      <module name="account-api-mapper" target="1.8" />
+      <module name="account-api-pu" target="1.8" />
+      <module name="account-api-server" target="1.8" />
+      <module name="account-api-test" target="1.8" />
+      <module name="account-api-test-common" target="1.8" />
+      <module name="account-api-test-integration" target="1.8" />
+      <module name="account-api-test-unit" target="1.8" />
+      <module name="account-component" target="1.8" />
+      <module name="account-component-client" target="1.8" />
+      <module name="account-component-dao" target="1.8" />
+      <module name="account-component-dao-impl" target="1.8" />
+      <module name="account-component-domain" target="1.8" />
+      <module name="account-component-entity" target="1.8" />
+      <module name="account-component-mapper" target="1.8" />
+      <module name="account-component-mirror" target="1.8" />
+      <module name="account-component-pu" target="1.8" />
+      <module name="account-component-pu-mirror" target="1.8" />
+      <module name="account-component-service" target="1.8" />
+      <module name="account-component-service-impl" target="1.8" />
+      <module name="account-component-test" target="1.8" />
+      <module name="account-component-test-common" target="1.8" />
+      <module name="account-component-test-integration" target="1.8" />
+      <module name="account-component-test-unit" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

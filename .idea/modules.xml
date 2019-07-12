@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/account.iml" filepath="$PROJECT_DIR$/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component.iml" filepath="$PROJECT_DIR$/account-component/account-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-client/account-component-client.iml" filepath="$PROJECT_DIR$/account-component/account-component-client/account-component-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-dao/account-component-dao.iml" filepath="$PROJECT_DIR$/account-component/account-component-dao/account-component-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-dao-impl/account-component-dao-impl.iml" filepath="$PROJECT_DIR$/account-component/account-component-dao-impl/account-component-dao-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-domain/account-component-domain.iml" filepath="$PROJECT_DIR$/account-component/account-component-domain/account-component-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-entity/account-component-entity.iml" filepath="$PROJECT_DIR$/account-component/account-component-entity/account-component-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-mapper/account-component-mapper.iml" filepath="$PROJECT_DIR$/account-component/account-component-mapper/account-component-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-mirror/account-component-mirror.iml" filepath="$PROJECT_DIR$/account-component/account-component-mirror/account-component-mirror.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-pu/account-component-pu.iml" filepath="$PROJECT_DIR$/account-component/account-component-pu/account-component-pu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-pu-mirror/account-component-pu-mirror.iml" filepath="$PROJECT_DIR$/account-component/account-component-pu-mirror/account-component-pu-mirror.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-service/account-component-service.iml" filepath="$PROJECT_DIR$/account-component/account-component-service/account-component-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-service-impl/account-component-service-impl.iml" filepath="$PROJECT_DIR$/account-component/account-component-service-impl/account-component-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test.iml" filepath="$PROJECT_DIR$/account-component/account-component-test/account-component-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/account-component-test-common.iml" filepath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/account-component-test-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/account-component-test-integration.iml" filepath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/account-component-test-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/account-component-test-unit.iml" filepath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/account-component-test-unit.iml" />
+    </modules>
+  </component>
+</project>

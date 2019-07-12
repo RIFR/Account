@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56cbf538-f073-4120-9380-575824b0d504" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-client/src/main/java/se/lexicon/account/component/client/AccountComponentClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-client/src/main/java/se/lexicon/account/component/client/AccountComponentClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-client/src/main/java/se/lexicon/account/component/client/AccountComponentClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-client/src/main/java/se/lexicon/account/component/client/AccountComponentClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/java/com/seb/account/component/dao/OrderDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/OrderDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/resources/account-component-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/resources/account-component-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-dao/src/main/java/com/seb/account/componment/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-dao/src/main/java/se/lexicon/account/componment/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-domain/src/main/java/com/lexicon/account/component/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-domain/src/main/java/se/lexicon/account/component/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-domain/src/main/java/se/lexicon/account/component/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-domain/src/main/java/se/lexicon/account/component/domain/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-entity/src/main/java/com/lexicon/account/component/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-service-impl/src/main/java/se/lexicon/account/component/service/AccountComponentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-service-impl/src/main/java/se/lexicon/account/component/service/AccountComponentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/AccountComponentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/AccountComponentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/com/lexicon/account/component/test/common/domain/OrderTestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/se/lexicon/account/component/test/common/domain/OrderTestBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/com/lexicon/account/component/test/common/entity/OrderEntityTestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/se/lexicon/account/component/test/common/entity/OrderEntityTestBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/se/lexicon/account/component/test/common/domain/AccountTestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/se/lexicon/account/component/test/common/domain/AccountTestBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/client/AccountComponentClientIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/client/AccountComponentClientIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/dao/OrderComponentDaoIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/dao/OrderComponentDaoIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/service/AccountComponentServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/service/AccountComponentServiceIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/src/test/java/se/lexicon/account/component/test/unit/AccountComponentDomainUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/src/test/java/se/lexicon/account/component/test/unit/AccountComponentDomainUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/src/test/java/se/lexicon/account/component/test/unit/AccountComponentEntityUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/src/test/java/se/lexicon/account/component/test/unit/AccountComponentEntityUnitTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-test/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-domain/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-dao-impl/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-pu/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-mirror/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-service-impl/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-service/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-client/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-pu-mirror/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-entity/target/" />
+    <ignored path="$PROJECT_DIR$/account-component/account-component-dao/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-test/account-api-test-common/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-common/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-client/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-pu/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-test/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-test/account-api-test-integration/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-test/account-api-test-unit/target/" />
+    <ignored path="$PROJECT_DIR$/account-api/account-api-server/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/account-component/account-component-service-impl/src/main/java/se/lexicon/account/component/service/AccountComponentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="49" column="110" selection-start-line="49" selection-start-column="110" selection-end-line="49" selection-end-column="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>offValue</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/AccountEntity.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountDaoImpl.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/AccountComponentService.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-client/src/main/java/se/lexicon/account/component/client/AccountComponentClient.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/se/lexicon/account/component/test/common/domain/AccountTestBuilder.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-entity/src/main/java/com/lexicon/account/component/entity/OrderEntity.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/com/lexicon/account/component/test/common/domain/OrderTestBuilder.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/com/lexicon/account/component/test/common/entity/OrderEntityTestBuilder.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/resources/account-component-dao.xml" />
+        <option value="$PROJECT_DIR$/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/OrderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/src/test/java/se/lexicon/account/component/test/unit/AccountComponentEntityUnitTest.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/client/AccountComponentClientIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/src/test/java/se/lexicon/account/component/test/unit/AccountComponentDomainUnitTest.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-client/src/main/java/se/lexicon/account/component/client/AccountComponentClientImpl.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-domain/src/main/java/se/lexicon/account/component/domain/Order.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/se/lexicon/account/component/test/common/entity/OrderEntityTestBuilder.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/se/lexicon/account/component/test/common/domain/OrderTestBuilder.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/service/AccountComponentServiceIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-domain/src/main/java/se/lexicon/account/component/domain/Account.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/OrderEntity.java" />
+        <option value="$PROJECT_DIR$/account-component/account-component-service-impl/src/main/java/se/lexicon/account/component/service/AccountComponentServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="26" />
+    <option name="y" value="31" />
+    <option name="width" value="1848" />
+    <option name="height" value="1009" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-service-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-common" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="seb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="seb" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="seb" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="seb" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="seb" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="seb" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="seb" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-integration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="seb" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test" type="462c0819:PsiDirectoryNode" />
+              <item name="account-component-test-unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="lexicon" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="account" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="se.lexicon.account.component.test.common.domain" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AccountComponentServiceIntegrationTestSuite">
+    <configuration name="AccountComponentDaoIntegrationTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account-component-test-integration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seb.account.component.test.integration.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seb.account.component.test.integration.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.seb.account.component.test.integration.dao.AccountComponentDaoIntegrationTestSuite" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountComponentEntityUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account-component-test-unit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lexicon.account.component.test.unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.lexicon.account.component.test.unit" />
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.account.component.test.unit.AccountComponentEntityUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountComponentServiceIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account-component-test-integration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seb.account.component.test.integration.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seb.account.component.test.integration.service" />
+      <option name="MAIN_CLASS_NAME" value="com.seb.account.component.test.integration.service.AccountComponentServiceIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountComponentServiceIntegrationTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account-component-test-integration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seb.account.component.test.integration.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seb.account.component.test.integration.service" />
+      <option name="MAIN_CLASS_NAME" value="com.seb.account.component.test.integration.service.AccountComponentServiceIntegrationTestSuite" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountComponentServiceIntegrationTest.testPlaceOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account-component-test-integration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seb.account.component.test.integration.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seb.account.component.test.integration.service" />
+      <option name="MAIN_CLASS_NAME" value="com.seb.account.component.test.integration.service.AccountComponentServiceIntegrationTest" />
+      <option name="METHOD_NAME" value="testPlaceOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountComponentServiceIntegrationTestSuite" />
+        <item itemvalue="JUnit.AccountComponentServiceIntegrationTest.testPlaceOrder" />
+        <item itemvalue="JUnit.AccountComponentDaoIntegrationTestSuite" />
+        <item itemvalue="JUnit.AccountComponentServiceIntegrationTest" />
+        <item itemvalue="JUnit.AccountComponentEntityUnitTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56cbf538-f073-4120-9380-575824b0d504" name="Default Changelist" comment="" />
+      <created>1562673098069</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562673098069</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AccountComponentServiceIntegrationTest_testGettingTotalAmount - 2019.07.12 at 14h 07m 06s.xml">
+      <configuration name="AccountComponentServiceIntegrationTest.testGettingTotalAmount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentServiceIntegrationTest_testGettingTotalAmount - 2019.07.12 at 14h 09m 41s.xml">
+      <configuration name="AccountComponentServiceIntegrationTest.testGettingTotalAmount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentServiceIntegrationTest_testGettingTotalAmount - 2019.07.12 at 14h 26m 21s.xml">
+      <configuration name="AccountComponentServiceIntegrationTest.testGettingTotalAmount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentEntityUnitTest - 2019.07.12 at 15h 25m 12s.xml">
+      <configuration name="AccountComponentEntityUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentServiceIntegrationTest - 2019.07.12 at 15h 25m 35s.xml">
+      <configuration name="AccountComponentServiceIntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentServiceIntegrationTestSuite - 2019.07.12 at 15h 25m 48s.xml">
+      <configuration name="AccountComponentServiceIntegrationTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentDaoIntegrationTestSuite - 2019.07.12 at 15h 25m 57s.xml">
+      <configuration name="AccountComponentDaoIntegrationTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentServiceIntegrationTest_testPlaceOrder - 2019.07.12 at 15h 39m 27s.xml">
+      <configuration name="AccountComponentServiceIntegrationTest.testPlaceOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentServiceIntegrationTestSuite - 2019.07.12 at 15h 40m 45s.xml">
+      <configuration name="AccountComponentServiceIntegrationTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountComponentServiceIntegrationTestSuite - 2019.07.12 at 15h 41m 33s.xml">
+      <configuration name="AccountComponentServiceIntegrationTestSuite" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="26" y="31" width="1848" height="1009" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3118757" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Project Explorer" order="2" />
+      <window_info id="DB Browser" order="3" weight="0.32991672" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Job Explorer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299435" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32881355" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299435" />
+      <window_info anchor="bottom" id="Console" order="7" />
+      <window_info anchor="bottom" id="DB Execution Console" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3299435" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3299435" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295063" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35618195" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Project Explorer" order="2" />
+      <window_info id="DB Browser" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Job Explorer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32912844" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989518" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Console" order="7" />
+      <window_info anchor="bottom" id="DB Execution Console" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010482" side_tool="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.2087156" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-component/account-component-service-impl/src/main/java/se/lexicon/account/component/service/AccountComponentServiceImpl.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/gigaspaces-rpc/0.17.0-RT4-SNAPSHOT/gigaspaces-rpc-0.17.0-RT4-20190708.093417-6.jar!/com/so4it/gs/rpc/exporter/PublishedService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/gigaspaces-rpc/0.17.0-RT4-SNAPSHOT/gigaspaces-rpc-0.17.0-RT4-20190708.093417-6.jar!/com/so4it/gs/rpc/remoting/interceptor/RequestContextServiceExecutionInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/gigaspaces-rpc/0.17.0-RT4-SNAPSHOT/gigaspaces-rpc-0.17.0-RT4-20190708.093417-6.jar!/com/so4it/gs/rpc/remoting/interceptor/ServiceExecutionInterceptorChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#1081#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/gigaspaces-rpc/0.17.0-RT4-SNAPSHOT/gigaspaces-rpc-0.17.0-RT4-20190708.093417-6.jar!/com/so4it/gs/rpc/exporter/ServiceInvokerImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/gigaspaces-rpc/0.17.0-RT4-SNAPSHOT/gigaspaces-rpc-0.17.0-RT4-20190708.093417-6.jar!/com/so4it/gs/rpc/remoting/DistributedServiceInvocationTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-openspaces/14.0.1/xap-openspaces-14.0.1-sources.jar!/org/openspaces/core/executor/internal/InternalSpaceTaskWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/server/space/SpaceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34290">
+          <caret line="2650" selection-start-line="2650" selection-end-line="2650" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.1/jackson-annotations-2.9.1.jar!/com/fasterxml/jackson/annotation/JsonIgnore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/common-util/0.17.0-RT4-SNAPSHOT/common-util-0.17.0-RT4-20190705.101836-15.jar!/com/so4it/common/util/object/ValueObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-domain/src/main/java/se/lexicon/account/component/domain/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-domain/src/main/java/se/lexicon/account/component/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test-common/src/main/java/se/lexicon/account/component/test/common/entity/OrderEntityTestBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test-unit/src/test/java/se/lexicon/account/component/test/unit/AccountComponentEntityUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/dao/AccountComponentDaoIntegrationTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/component-dao/0.17.0-RT4-SNAPSHOT/component-dao-0.17.0-RT4-20190705.102211-15.jar!/com/so4it/component/GenericDao.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/component-entity/0.17.0-RT4-SNAPSHOT/component-entity-0.17.0-RT4-20190705.102209-15.jar!/com/so4it/component/entity/IdEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/default-java/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/default-java/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/default-java/jre/lib/rt.jar!/java/lang/reflect/Method.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/component-entity/0.17.0-RT4-SNAPSHOT/component-entity-0.17.0-RT4-20190705.102209-15.jar!/com/so4it/component/entity/AbstractEntityBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/common-util/0.17.0-RT4-SNAPSHOT/common-util-0.17.0-RT4-20190705.101836-15.jar!/com/so4it/common/util/object/Required.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/so4it/sugar/component-dao-gs/0.17.0-RT4-SNAPSHOT/component-dao-gs-0.17.0-RT4-20190705.102219-15.jar!/com/so4it/component/dao/gs/AbstractSpaceDao.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="e#5968#5969#0" expanded="true" />
+            <element signature="e#9508#9509#0" expanded="true" />
+            <element signature="e#9545#9546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-openspaces/14.0.1/xap-openspaces-14.0.1-sources.jar!/org/openspaces/core/IsolationLevelHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/client/IsolationLevelModifiers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.19.RELEASE/spring-core-4.3.19.RELEASE.jar!/org/springframework/util/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.19.RELEASE/spring-tx-4.3.19.RELEASE.jar!/org/springframework/transaction/support/TransactionSynchronizationUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.19.RELEASE/spring-tx-4.3.19.RELEASE.jar!/org/springframework/transaction/support/TransactionSynchronizationManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+          <folding>
+            <element signature="e#5512#5513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-openspaces/14.0.1/xap-openspaces-14.0.1-sources.jar!/org/openspaces/core/transaction/DefaultTransactionProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/client/SpaceProxyOperationModifiers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#1919#1920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-openspaces/14.0.1/xap-openspaces-14.0.1-sources.jar!/org/openspaces/core/DefaultGigaSpace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="662" selection-start-line="662" selection-end-line="662" />
+          <folding>
+            <element signature="e#15365#15366#0" expanded="true" />
+            <element signature="e#15403#15404#0" expanded="true" />
+            <element signature="e#59911#59912#0" expanded="true" />
+            <element signature="e#59968#59969#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/AbstractSpaceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="279" selection-start-line="279" selection-end-line="279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/j_spaces/core/client/Modifiers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="246" selection-start-line="246" selection-end-line="246" />
+          <folding>
+            <element signature="e#8926#8927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/actions/AbstractSpaceProxyActionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/actioninfo/ReadTakeMultipleProxyActionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/actioninfo/CommonProxyActionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/SpaceProxyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
+          <folding>
+            <element signature="e#7371#7372#0" expanded="true" />
+            <element signature="e#7398#7399#0" expanded="true" />
+            <element signature="e#8014#8015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/actioninfo/QueryProxyActionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/metadata/ObjectType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#3232#3233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/utils/collections/CopyOnUpdateMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="e#2203#2204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/metadata/ClientTypeDescRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
+          <folding>
+            <element signature="e#23664#23665#0" expanded="true" />
+            <element signature="e#23731#23732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/service/AccountComponentServiceIntegrationTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/client/spaceproxy/metadata/SpaceProxyTypeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="313" selection-start-line="313" selection-end-line="313" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/transport/TemplatePacketFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/metadata/AbstractTypeIntrospector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/metadata/PojoIntrospector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="260" selection-start-line="260" selection-end-line="260" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/metadata/SpaceTypeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="457" selection-start-line="457" selection-end-line="457" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/OrderEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1355#1356#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#1924#1925#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#2177#2178#0" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2596#2597#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3417#3418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-test/account-component-test-integration/src/test/java/com/seb/account/component/test/integration/service/AccountComponentServiceIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/metadata/EntryType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="e#2771#2772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gigaspaces/xap-datagrid/14.0.1/xap-datagrid-14.0.1-sources.jar!/com/gigaspaces/internal/metadata/TypeDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
+          <folding>
+            <element signature="e#15175#15176#0" expanded="true" />
+            <element signature="e#15203#15204#0" expanded="true" />
+            <element signature="e#15716#15717#0" expanded="true" />
+            <element signature="e#16931#16932#0" expanded="true" />
+            <element signature="e#16980#16981#0" expanded="true" />
+            <element signature="e#19591#19592#0" expanded="true" />
+            <element signature="e#19641#19642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account-component/account-component-service-impl/src/main/java/se/lexicon/account/component/service/AccountComponentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="49" column="110" selection-start-line="49" selection-start-column="110" selection-end-line="49" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
