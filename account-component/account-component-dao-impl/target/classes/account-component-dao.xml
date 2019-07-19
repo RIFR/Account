@@ -22,5 +22,9 @@
         <constructor-arg name="gigaSpace" ref="accountGigaSpace"/>
     </bean>
 
+    <bean id="orderBookDao" class="se.lexicon.account.component.dao.OrderBookDaoImpl">
+        <constructor-arg name="gigaSpace" ref="accountGigaSpace"/>
+    </bean>
+
 
 </beans>

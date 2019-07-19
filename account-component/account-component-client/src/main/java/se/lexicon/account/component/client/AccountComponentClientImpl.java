@@ -1,7 +1,6 @@
 package se.lexicon.account.component.client;
 
-import se.lexicon.account.component.domain.Order;
-import se.lexicon.account.component.domain.Account;
+import com.lexicon.account.component.domain.Account;
 import se.lexicon.account.component.service.AccountComponentService;
 import com.so4it.common.util.object.Required;
 
@@ -19,10 +18,5 @@ public class AccountComponentClientImpl implements AccountComponentClient{
     @Override
     public void createAccount(Account account) {
         accountComponentService.createAccount(account);
-    }
-
-    @Override
-    public void PlaceOrder(Account account, Order order) {
-        accountComponentService.placeOrder(account.getSsn(), order);
     }
 }

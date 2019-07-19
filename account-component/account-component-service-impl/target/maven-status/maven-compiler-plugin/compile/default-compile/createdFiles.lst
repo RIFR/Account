@@ -1,2 +1,3 @@
 se/lexicon/account/component/service/AccountComponentDescriptor.class
 se/lexicon/account/component/service/AccountComponentServiceImpl.class
+se/lexicon/account/component/service/OrderComponentServiceImpl.class

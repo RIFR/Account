@@ -3,8 +3,6 @@ package se.lexicon.account.component.entity;
 import com.gigaspaces.annotation.pojo.SpaceClass;
 import com.gigaspaces.annotation.pojo.SpaceId;
 import com.gigaspaces.annotation.pojo.SpaceRouting;
-import se.lexicon.account.component.domain.Balance;
-import com.so4it.annotation.Allowed;
 import com.so4it.common.util.object.Required;
 import com.so4it.component.entity.AbstractEntityBuilder;
 import com.so4it.component.entity.IdEntity;
@@ -18,17 +16,17 @@ import java.math.BigDecimal;
 @SpaceClass
 public class AccountEntity extends IdEntity<String> {
 
-    //The arrangement id of this account balance
-    private String id;
+    //The arrangement ssn of this account balance
+    private String ssn;
 
-    // Unique id for the posting
+    // Unique ssn for the posting
     private BigDecimal amount;
 
     private AccountEntity() {
     }
 
     private AccountEntity(Builder builder) {
-        this.id = builder.id;
+        this.ssn = builder.ssn;
         this.amount = Required.notNull(builder.amount,"amount",builder.isTemplate());
     }
 
@@ -36,11 +34,19 @@ public class AccountEntity extends IdEntity<String> {
     @SpaceId(autoGenerate = false)
     @SpaceRouting
     public String getId() {
-        return id;
+        return ssn;
     }
 
     private void setId(String id) {
-        this.id = id;
+        this.ssn = id;
+    }
+
+    public String getSsn() {
+        return ssn;
+    }
+
+    private void setSsn(String ssn) {
+        this.ssn = ssn;
     }
 
     public BigDecimal getAmount() {
@@ -50,12 +56,6 @@ public class AccountEntity extends IdEntity<String> {
     private void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
-
-
-
-
-
-
 
     public static Builder builder() {
         return new Builder(false);
@@ -68,9 +68,9 @@ public class AccountEntity extends IdEntity<String> {
 
     public static class Builder extends AbstractEntityBuilder<AccountEntity> {
 
-        private String id;
+        private String ssn;
 
-        // Unique id for the posting
+        // Unique ssn for the posting
         private BigDecimal amount;
 
         public Builder(boolean template) {
@@ -78,7 +78,7 @@ public class AccountEntity extends IdEntity<String> {
         }
 
         public AccountEntity.Builder withId(String id) {
-            this.id = id;
+            this.ssn = id;
             return this;
         }
 

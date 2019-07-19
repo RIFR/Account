@@ -9,4 +9,11 @@
     </bean>
 
 
+
+    <bean id="orderComponentService" class="se.lexicon.account.component.service.OrderComponentServiceImpl">
+        <constructor-arg name="orderDao" ref="orderDao"/>
+        <constructor-arg name="orderBookDao" ref="orderBookDao"/>
+    </bean>
+
+
 </beans>

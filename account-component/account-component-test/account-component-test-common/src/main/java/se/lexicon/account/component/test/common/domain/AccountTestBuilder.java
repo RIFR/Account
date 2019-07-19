@@ -1,7 +1,7 @@
-package se.lexicon.account.component.test.common.domain;
+package com.lexicon.account.component.test.common.domain;
 
 import com.google.common.collect.Sets;
-import se.lexicon.account.component.domain.Account;
+import com.lexicon.account.component.domain.Account;
 import se.lexicon.account.component.domain.Order;
 import com.so4it.common.util.object.Required;
 import com.so4it.test.domain.AbstractTestBuilder;
@@ -19,15 +19,9 @@ public class AccountTestBuilder extends AbstractTestBuilder<Account> {
     public AccountTestBuilder(Account.Builder builder) {
         this.builder = Required.notNull(builder, "builder");
         this.builder
-                .withId("test")
                 .withSsn("1111111111")
                 .withAmount(BigDecimal.TEN);
 
-    }
-
-    public AccountTestBuilder withOrders(Order... orders){
-        builder.withOrders(Sets.newHashSet(orders));
-        return this;
     }
 
     public AccountTestBuilder withSsn(String ssn){

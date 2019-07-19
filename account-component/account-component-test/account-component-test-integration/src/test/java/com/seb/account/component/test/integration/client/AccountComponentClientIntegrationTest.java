@@ -1,8 +1,6 @@
 package com.seb.account.component.test.integration.client;
 
-import se.lexicon.account.component.entity.OrderEntity;
-import se.lexicon.account.component.test.common.domain.OrderTestBuilder;
-import se.lexicon.account.component.test.common.domain.AccountTestBuilder;
+import com.lexicon.account.component.test.common.domain.AccountTestBuilder;
 import com.seb.account.component.test.integration.service.AccountComponentServiceIntegrationTestSuite;
 import com.so4it.test.category.IntegrationTest;
 import com.so4it.test.gs.rule.ClearGigaSpaceTestRule;
@@ -15,8 +13,6 @@ import org.junit.rules.RuleChain;
 import org.openspaces.core.GigaSpace;
 import se.lexicon.account.component.client.AccountComponentClient;
 import se.lexicon.account.component.entity.AccountEntity;
-
-import java.math.BigDecimal;
 
 /**
  * @author Magnus Poromaa {@literal <mailto:magnus.poromaa@so4it.com/>}
@@ -40,29 +36,4 @@ public class AccountComponentClientIntegrationTest {
 
     }
 
-    @Test
-    public void testPlaceOrder() {
-
-        AccountComponentClient accountComponentClient = AccountComponentServiceIntegrationTestSuite.getImportContext().getBean(AccountComponentClient.class);
-        accountComponentClient.createAccount(AccountTestBuilder.builder().build());
-
-        accountComponentClient.PlaceOrder(AccountTestBuilder.builder().build(), OrderTestBuilder.builder().build());
-
-        Assert.assertEquals(1, AccountComponentServiceIntegrationTestSuite.getExportContext().getBean(GigaSpace.class).count(OrderEntity.templateBuilder().build()));
-
-    }
-
-    @Test
-    public void testPlaceOrderFailure() {
-
-        AccountComponentClient accountComponentClient = AccountComponentServiceIntegrationTestSuite.getImportContext().getBean(AccountComponentClient.class);
-        accountComponentClient.createAccount(AccountTestBuilder.builder().build());
-
-        try{
-            accountComponentClient.PlaceOrder(AccountTestBuilder.builder().build(), OrderTestBuilder.builder().withAmount(BigDecimal.valueOf(100d)).build());
-            Assert.fail("Exception expected");
-        }catch (Exception e) {
-            //System.out.println(e);
-        }
-    }
 }

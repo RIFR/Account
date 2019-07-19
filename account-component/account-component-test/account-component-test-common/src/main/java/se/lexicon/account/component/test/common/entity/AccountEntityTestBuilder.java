@@ -22,6 +22,16 @@ public class AccountEntityTestBuilder extends AbstractTestBuilder<AccountEntity>
 
     }
 
+    public AccountEntityTestBuilder withSsn(String ssn){
+        builder.withId(ssn);
+        return this;
+    }
+
+    public AccountEntityTestBuilder withAmount(BigDecimal amount){
+        builder.withAmount(amount);
+        return this;
+    }
+
     public static AccountEntityTestBuilder builder() {
         return new AccountEntityTestBuilder(AccountEntity.builder());
     }

@@ -1,7 +1,7 @@
 package com.seb.account.component.test.integration.service;
 
-import se.lexicon.account.component.domain.Account;
-import se.lexicon.account.component.test.common.domain.AccountTestBuilder;
+import com.lexicon.account.component.domain.Account;
+import com.lexicon.account.component.test.common.domain.AccountTestBuilder;
 import se.lexicon.account.component.test.common.domain.OrderTestBuilder;
 import com.so4it.test.category.IntegrationTest;
 import com.so4it.test.common.Assert;
@@ -12,7 +12,9 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.rules.RuleChain;
 import org.openspaces.core.GigaSpace;
+import se.lexicon.account.component.domain.Orders;
 import se.lexicon.account.component.service.AccountComponentService;
+import se.lexicon.account.component.service.OrderComponentService;
 
 import java.math.BigDecimal;
 
@@ -24,48 +26,44 @@ public class AccountComponentServiceIntegrationTest {
 
     @ClassRule
     public static final RuleChain SUITE_RULE_CHAIN = AccountComponentServiceIntegrationTestSuite.SUITE_RULE_CHAIN;
+    public static final String SSN = "1111111111";
 
     @Rule
     public ClearGigaSpaceTestRule clearGigaSpaceTestRule = new ClearGigaSpaceTestRule(AccountComponentServiceIntegrationTestSuite.getExportContext().getBean(GigaSpace.class));
 
     @Test
-    public void testCreatingAccount() {
+    public void testCreatingAccountAndCheckBalanceIsCorrect() {
+
         AccountComponentService accountComponentService = AccountComponentServiceIntegrationTestSuite.getImportContext().getBean(AccountComponentService.class);
-        accountComponentService.createAccount(AccountTestBuilder.builder().withOrders(OrderTestBuilder.builder().build()).build());
-        Account account = accountComponentService.getAccount(AccountTestBuilder.builder().build().getSsn());
-        Assert.assertNotNull(account);
-        Assert.assertEquals(1, account.getOrders().size());
-
-        accountComponentService.createAccount(AccountTestBuilder.builder().withSsn("account2").withAmount(BigDecimal.valueOf(200)).build());
-        Account account2 = accountComponentService.getAccount("account2");
-        Assert.assertEquals(0, account2.getOrders().size());
-
-        accountComponentService.createAccount(AccountTestBuilder.builder().withSsn("account3").withAmount(BigDecimal.valueOf(300))
-                .withOrders(OrderTestBuilder.builder().build(),OrderTestBuilder.builder()
-                        .withOrderBookId("Book3").withAmount(BigDecimal.TEN).withNoOfItems(10).build()).build());
-        Account account3 = accountComponentService.getAccount("account3");
-        Assert.assertEquals(2, account3.getOrders().size());
-
-    }
+        OrderComponentService orderComponentService = AccountComponentServiceIntegrationTestSuite.getImportContext().getBean(OrderComponentService.class);
 
 
-    @Test
-    public void testPlaceOrder() {
-        AccountComponentService accountComponentService = AccountComponentServiceIntegrationTestSuite.getImportContext().getBean(AccountComponentService.class);
 
-        accountComponentService.createAccount(AccountTestBuilder.builder().build());
-        accountComponentService.placeOrder(AccountTestBuilder.builder().build().getSsn(), OrderTestBuilder.builder().withOrderBookId("firstBook").build());
+        //Create the account
+        Account created = AccountTestBuilder.builder().withSsn(SSN).build();
+        accountComponentService.createAccount(created);
 
-        Account account = accountComponentService.getAccount(AccountTestBuilder.builder().build().getSsn());
-        Assert.assertNotNull(account);
-        Assert.assertEquals(9, account.getAmount().intValue());
-        Assert.assertEquals(1, account.getOrders().size());
 
-        accountComponentService.placeOrder(AccountTestBuilder.builder().build().getSsn(),
-                OrderTestBuilder.builder().withAmount(BigDecimal.valueOf(2d)).withOrderBookId("otherBook").build());
-        account = accountComponentService.getAccount(AccountTestBuilder.builder().build().getSsn());
-        Assert.assertEquals(7, account.getAmount().intValue());
-        Assert.assertEquals(2, account.getOrders().size());
+        //Fetch the account
+        Account fetched = accountComponentService.getAccount(SSN);
+
+        //Assert the created and fetched accounts are the same (e.g. "equals")
+        Assert.assertNotNull(fetched);
+        Assert.assertEquals(created,fetched);
+
+
+        orderComponentService.placeOrder(OrderTestBuilder.builder().withSsn(SSN).withAmount(BigDecimal.ONE).build());
+        orderComponentService.placeOrder(OrderTestBuilder.builder().withSsn(SSN).withAmount(BigDecimal.TEN).build());
+
+
+
+        Orders orders = orderComponentService.getOrders(SSN);
+        Assert.assertEquals(2, orders.size());
+        Assert.assertEquals(BigDecimal.valueOf(11.0), orderComponentService.getTotalOrderValueOfAllAccounts());
+
+
+
+
     }
 
 

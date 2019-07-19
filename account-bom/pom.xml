@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.lexicon</groupId>
+        <artifactId>account</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>account-bom</artifactId>
+    <packaging>pom</packaging>
+
+
+
+    <dependencyManagement>
+        <dependencies>
+
+
+            <!--
+                API
+            -->
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-api-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-api-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-api-mapper</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-api-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-api-test-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+
+            <!--
+                Component
+            -->
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-dao</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-dao-impl</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-entity</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-mapper</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-service-impl</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lexicon</groupId>
+                <artifactId>account-component-test-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+
+
+
+        </dependencies>
+    </dependencyManagement>
+</project>
+

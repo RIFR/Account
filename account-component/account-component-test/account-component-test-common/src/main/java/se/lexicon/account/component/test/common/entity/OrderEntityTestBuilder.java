@@ -1,5 +1,6 @@
 package se.lexicon.account.component.test.common.entity;
 
+import se.lexicon.account.component.domain.OrderBooks;
 import se.lexicon.account.component.entity.OrderEntity;
 import com.so4it.common.util.object.Required;
 import com.so4it.test.domain.AbstractTestBuilder;
@@ -17,26 +18,18 @@ public class OrderEntityTestBuilder extends AbstractTestBuilder<OrderEntity> {
     public OrderEntityTestBuilder(OrderEntity.Builder builder) {
         this.builder = Required.notNull(builder, "builder");
         this.builder
-                .withId("1111111111-1")
+                .withId("1111111111")
                 .withSsn("1111111111")
-                .withOrderBookId("testBookEntity")
-                .withAmount(BigDecimal.TEN)
-                .withNoOfItems(10);
-    }
-
-    public OrderEntityTestBuilder withAmount(BigDecimal amount){
-        this.builder.withAmount(amount);
-        return this;
+                .withAmount(BigDecimal.TEN);
     }
 
     public OrderEntityTestBuilder withSsn(String ssn){
-        this.builder.withId(ssn+"-1");
-        this.builder.withSsn(ssn);
+        builder.withSsn(ssn);
         return this;
     }
 
-    public OrderEntityTestBuilder withNoOfItems(Integer noOfItems){
-        this.builder.withNoOfItems(noOfItems);
+    public OrderEntityTestBuilder withAmount(BigDecimal amount){
+        builder.withAmount(amount);
         return this;
     }
 

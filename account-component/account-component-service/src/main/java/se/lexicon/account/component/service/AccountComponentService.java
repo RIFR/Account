@@ -1,8 +1,7 @@
 package se.lexicon.account.component.service;
 
 
-import se.lexicon.account.component.domain.Order;
-import se.lexicon.account.component.domain.Account;
+import com.lexicon.account.component.domain.Account;
 import com.so4it.gs.rpc.Broadcast;
 import com.so4it.gs.rpc.RemoteResultReducer;
 import com.so4it.gs.rpc.Routing;
@@ -23,19 +22,8 @@ public interface AccountComponentService {
     Account getAccount(@Routing String ssn);
 
 
-    void placeOrder(@Routing String ssn, Order order);
-
-
     @Broadcast(reducer =  BigDecimalRemoteResultReducer.class)
     BigDecimal getTotalAmountOnAccounts();
-
-    public static class BigDecimalRemoteResultReducer implements RemoteResultReducer<BigDecimal>{
-
-        @Override
-        public BigDecimal reduce(List<RemoteResult<BigDecimal>> list) throws ResultReducerException {
-            return BigDecimal.valueOf( list.stream().map( rr -> rr.getResult().doubleValue()).reduce(0.0,Double::sum));
-        }
-    }
 
 
 

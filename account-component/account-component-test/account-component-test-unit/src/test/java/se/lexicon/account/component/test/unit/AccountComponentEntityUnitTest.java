@@ -12,12 +12,10 @@ import org.junit.experimental.categories.Category;
 public class AccountComponentEntityUnitTest {
 
     private static final String PACKAGE_NAME = "se.lexicon.account.component.test.common.entity";
-    //private static final String PACKAGE_NAME2 = "com.lexicon.account.component.test.common.entity";
 
     @Test
     public void testDomainCompliance() {
 
         TestBuilderExecutor.execute(PACKAGE_NAME, EntityMatchers.getMatchers());
-        //TestBuilderExecutor.execute(PACKAGE_NAME2, EntityMatchers.getMatchers());
     }
 }

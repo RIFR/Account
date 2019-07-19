@@ -12,6 +12,8 @@ import static org.openspaces.extensions.QueryExtension.maxEntry;
  */
 public class AccountDaoImpl extends AbstractSpaceDao<AccountEntity, String> implements AccountDao {
 
+
+
     public AccountDaoImpl(GigaSpace gigaSpace) {
         super(gigaSpace);
     }

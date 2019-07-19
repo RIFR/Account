@@ -1,3 +1,4 @@
-se/lexicon/account/component/service/AccountComponentService$BigDecimalRemoteResultReducer.class
 se/lexicon/account/component/service/AccountComponentService.class
+se/lexicon/account/component/service/OrderComponentService.class
+se/lexicon/account/component/service/BigDecimalRemoteResultReducer.class
 se/lexicon/account/component/service/AccountComponentServiceProvider.class

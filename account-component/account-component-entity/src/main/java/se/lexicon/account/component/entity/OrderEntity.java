@@ -7,6 +7,7 @@ import com.so4it.annotation.Allowed;
 import com.so4it.common.util.object.Required;
 import com.so4it.component.entity.AbstractEntityBuilder;
 import com.so4it.component.entity.IdEntity;
+import se.lexicon.account.component.domain.OrderBooks;
 
 import java.math.BigDecimal;
 
@@ -22,11 +23,9 @@ public class OrderEntity extends IdEntity<String> {
 
     private String ssn;
 
-    private String orderBookId;
-
     private BigDecimal amount;
 
-    private Integer noOfItems;
+    //private OrderBooks orderBookId;
 
     private OrderEntity() {
     }
@@ -34,9 +33,8 @@ public class OrderEntity extends IdEntity<String> {
     private OrderEntity(Builder builder) {
         this.id = builder.id;
         this.ssn = Required.notNull(builder.ssn,"ssn",builder.isTemplate());
-        this.orderBookId = Required.notNull(builder.orderBookId,"orderBookId",builder.isTemplate());
         this.amount = Required.notNull(builder.amount,"amount",builder.isTemplate());
-        this.noOfItems = Required.notNull(builder.noOfItems,"noOfItems",builder.isTemplate());
+        //this.orderBookId = Required.notNull(builder.orderBookId,"orderBookId",builder.isTemplate());
     }
 
     @Override
@@ -58,14 +56,6 @@ public class OrderEntity extends IdEntity<String> {
         this.ssn = ssn;
     }
 
-    public String getOrderBookId() {
-        return orderBookId;
-    }
-
-    private void setOrderBookId(String orderBookId) {
-        this.orderBookId = orderBookId;
-    }
-
     public BigDecimal getAmount() {
         return amount;
     }
@@ -74,13 +64,13 @@ public class OrderEntity extends IdEntity<String> {
         this.amount = amount;
     }
 
-    public Integer getNoOfItems() {
-        return noOfItems;
-    }
-
-    private void setNoOfItems(Integer noOfItems) {
-        this.noOfItems = noOfItems;
-    }
+//    public OrderBooks getOrderBookId() {
+//        return orderBookId;
+//    }
+//
+//    private void setOrderBookId(OrderBooks orderBookId) {
+//        this.orderBookId = orderBookId;
+//    }
 
     public static Builder builder() {
         return new Builder(false);
@@ -98,12 +88,10 @@ public class OrderEntity extends IdEntity<String> {
         //The arrangement id of this account balance
         private String ssn;
 
-        private String orderBookId;
-
         // Unique id for the posting
         private BigDecimal amount;
 
-        private Integer noOfItems;
+        //private OrderBooks orderBookId;
 
         public Builder(boolean template) {
             super(template);
@@ -119,20 +107,16 @@ public class OrderEntity extends IdEntity<String> {
             return this;
         }
 
-        public OrderEntity.Builder withOrderBookId(String orderBookId) {
-            this.orderBookId = orderBookId;
-            return this;
-        }
-
         public OrderEntity.Builder withAmount(BigDecimal amount) {
             this.amount = amount;
             return this;
         }
 
-        public OrderEntity.Builder withNoOfItems(Integer noOfItems) {
-            this.noOfItems = noOfItems;
-            return this;
-        }
+//        public OrderEntity.Builder withOrderBookId(OrderBooks orderBookId) {
+//            this.orderBookId = orderBookId;
+//            return this;
+//        }
+
 
         @Override
         public OrderEntity build() {
