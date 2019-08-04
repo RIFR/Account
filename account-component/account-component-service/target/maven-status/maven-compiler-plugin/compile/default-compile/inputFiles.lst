@@ -1,4 +1,4 @@
-/home/rifr/IdeaProjects/account/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/BigDecimalRemoteResultReducer.java
-/home/rifr/IdeaProjects/account/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/AccountComponentService.java
-/home/rifr/IdeaProjects/account/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/AccountComponentServiceProvider.java
-/home/rifr/IdeaProjects/account/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/OrderComponentService.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/AccountComponentServiceProvider.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/OrderComponentService.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/AccountComponentService.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-service/src/main/java/se/lexicon/account/component/service/BigDecimalRemoteResultReducer.java

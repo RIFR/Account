@@ -1,4 +1,5 @@
-/home/rifr/IdeaProjects/account/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/AccountBalanceEntity.java
-/home/rifr/IdeaProjects/account/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/AccountTransactionEntity.java
-/home/rifr/IdeaProjects/account/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/AccountEntity.java
-/home/rifr/IdeaProjects/account/account-component/account-component-entity/src/main/java/com/lexicon/account/component/entity/OrderEntity.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/AccountTransactionEntity.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/AccountEntity.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/AccountBalanceEntity.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/OrderEntity.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-entity/src/main/java/se/lexicon/account/component/entity/OrderBookEntity.java

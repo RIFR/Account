@@ -8,10 +8,7 @@ import com.so4it.common.util.object.Required;
 import com.so4it.component.entity.AbstractEntityBuilder;
 import com.so4it.component.entity.IdEntity;
 import se.lexicon.account.component.domain.Money;
-import se.lexicon.account.component.domain.OrderBooks;
 import se.lexicon.account.component.domain.Phase;
-
-import java.math.BigDecimal;
 
 /**
  *
@@ -25,14 +22,17 @@ public class OrderBookEntity extends IdEntity<String> {
     private String orderId;
     private String ssn;
 
-    String instrument;
+    private String instrument;
+    private Integer noOfItems;
 
-    Money minValue;
-    Money maxValue;
+    private Money value;
+    //Money minValue if SELL, maxValue if BUY;
 
-    Phase phase = Phase.UNKNOWN;
+    private Phase phase = Phase.UNKNOWN;
 
-    Boolean sellOrder; // Sell or Buy
+    private Boolean sellOrder; // Sell or Buy
+
+    private String matchingOrderId;
 
     private OrderBookEntity() {
     }
@@ -42,10 +42,12 @@ public class OrderBookEntity extends IdEntity<String> {
         this.orderId = Required.notNull(builder.orderId,"orderId",builder.isTemplate());
         this.ssn = Required.notNull(builder.ssn,"ssn",builder.isTemplate());
         this.instrument = Required.notNull(builder.instrument,"instrument",builder.isTemplate());
-        this.minValue = Required.notNull(builder.minValue,"minValue",builder.isTemplate());
-        this.maxValue = Required.notNull(builder.maxValue,"maxValue",builder.isTemplate());
+        this.noOfItems = Required.notNull(builder.noOfItems,"noOfItems",builder.isTemplate());
+        this.value = Required.notNull(builder.value,"minValue",builder.isTemplate());
+        //this.maxValue = Required.notNull(builder.maxValue,"maxValue",builder.isTemplate());
         this.phase = Required.notNull(builder.phase,"phase",builder.isTemplate());
         this.sellOrder = Required.notNull(builder.sellOrder,"sellOrder",builder.isTemplate());
+        this.matchingOrderId = Required.notNull(builder.matchingOrderId,"matchingOrderId",builder.isTemplate());
     }
 
     @Override
@@ -83,21 +85,29 @@ public class OrderBookEntity extends IdEntity<String> {
         this.instrument = instrument;
     }
 
-    public Money getMinValue() {
-        return minValue;
+    public Integer getNoOfItems() {
+        return noOfItems;
     }
 
-    private void setMinValue(Money minValue) {
-        this.minValue = minValue;
+    private void setNoOfItems(Integer noOfItems) {
+        this.noOfItems = noOfItems;
     }
 
-    public Money getMaxValue() {
-        return maxValue;
+    public Money getValue() {
+        return value;
     }
 
-    private void setMaxValue(Money maxValue) {
-        this.maxValue = maxValue;
+    private void setValue(Money value) {
+        this.value = value;
     }
+
+//    public Money getMaxValue() {
+//        return maxValue;
+//    }
+//
+//    private void setMaxValue(Money maxValue) {
+//        this.maxValue = maxValue;
+//    }
 
     public Phase getPhase() {
         return phase;
@@ -134,13 +144,16 @@ public class OrderBookEntity extends IdEntity<String> {
         private String ssn;
 
         String instrument;
+        Integer noOfItems;
 
-        Money minValue;
-        Money maxValue;
+        Money value;
+        //Money maxValue;
 
         Phase phase = Phase.UNKNOWN;
 
         Boolean sellOrder; // Sell or Buy
+
+        String matchingOrderId;
 
         public Builder(boolean template) {
             super(template);
@@ -166,15 +179,20 @@ public class OrderBookEntity extends IdEntity<String> {
             return this;
         }
 
-        public OrderBookEntity.Builder withMinValue(Money minValue) {
-            this.minValue = minValue;
+        public OrderBookEntity.Builder withNoOfItems(Integer noOfItems) {
+            this.noOfItems = noOfItems;
             return this;
         }
 
-        public OrderBookEntity.Builder withMaxValue(Money maxValue) {
-            this.maxValue = maxValue;
+        public OrderBookEntity.Builder withValue(Money value) {
+            this.value = value;
             return this;
         }
+
+//        public OrderBookEntity.Builder withMaxValue(Money maxValue) {
+//            this.maxValue = maxValue;
+//            return this;
+//        }
 
         public OrderBookEntity.Builder withPhase(Phase phase) {
             this.phase = phase;
@@ -183,6 +201,11 @@ public class OrderBookEntity extends IdEntity<String> {
 
         public OrderBookEntity.Builder withSellOrder(Boolean sellOrder) {
             this.sellOrder = sellOrder;
+            return this;
+        }
+
+        public OrderBookEntity.Builder withMatchingOrderId(String matchingOrderId) {
+            this.matchingOrderId = matchingOrderId;
             return this;
         }
 

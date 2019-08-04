@@ -1,4 +1,5 @@
 se/lexicon/account/component/dao/OrderDaoImpl.class
 se/lexicon/account/component/dao/AccountTransactionDaoImpl.class
 se/lexicon/account/component/dao/AccountDaoImpl.class
+se/lexicon/account/component/dao/OrderBookDaoImpl.class
 se/lexicon/account/component/dao/AccountBalanceDaoImpl.class

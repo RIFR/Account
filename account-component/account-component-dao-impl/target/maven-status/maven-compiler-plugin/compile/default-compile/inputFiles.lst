@@ -1,4 +1,5 @@
-/home/rifr/IdeaProjects/account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountDaoImpl.java
-/home/rifr/IdeaProjects/account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/OrderDaoImpl.java
-/home/rifr/IdeaProjects/account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountTransactionDaoImpl.java
-/home/rifr/IdeaProjects/account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountBalanceDaoImpl.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/OrderDaoImpl.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountTransactionDaoImpl.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountBalanceDaoImpl.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/OrderBookDaoImpl.java
+/home/richard/GIT/RIFR/Account/account-component/account-component-dao-impl/src/main/java/se/lexicon/account/component/dao/AccountDaoImpl.java
