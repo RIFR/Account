@@ -100,6 +100,7 @@ public class OrderComponentServiceImpl implements OrderComponentService {
                 (OrderBookEntity.templateBuilder()
                         .withSellOrder(!order.getOrderBookId().getFirst().getSellOrder())
                         .withInstrument(order.getOrderBookId().getFirst().getInstrument())
+                        //.withPhase(Phase.PENDING_INCOMING)
                         .build());
 
         double minMaxValue = 0d;
@@ -198,7 +199,19 @@ public class OrderComponentServiceImpl implements OrderComponentService {
             return;
         }
 
-        if (matchingOrderBooks.size() == 0) return; // Finished or No more match found
+        if (matchingOrderBooks.size() == 0) {
+
+            orderBookDao.insert(OrderBookEntity.builder()
+                    .withSsn(order.getSsn())
+                    .withOrderId(order.getId())
+                    .withNoOfItems(itemsRemaining)
+                    .withPhase(Phase.PENDING_INCOMING)
+                    .withSellOrder(order.getOrderBookId().getFirst().getSellOrder())
+                    .withValue(order.getOrderBookId().getFirst().getValue())
+                    .withInstrument(order.getOrderBookId().getFirst().getInstrument())
+                    .build());
+            return;
+        } // Finished or No more match found
 
         for (OrderBookEntity orderBookEntity: matchingOrderBooks){
             matchingOrder = orderDao.read(orderBookEntity.getOrderId());
@@ -208,9 +221,9 @@ public class OrderComponentServiceImpl implements OrderComponentService {
 
     }
 
-    private boolean MatchOrder (Order forOrder, OrderBook orderBook) {
-
-    };
+//    private boolean MatchOrder (Order forOrder, OrderBook orderBook) {
+//
+//    }
 
     private double AmountOf(double amount, Currency fromCurrency, Currency toCurrency) {
         if (fromCurrency == toCurrency) return amount;
