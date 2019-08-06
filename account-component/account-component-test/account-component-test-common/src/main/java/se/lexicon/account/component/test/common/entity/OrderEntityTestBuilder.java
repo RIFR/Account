@@ -6,6 +6,7 @@ import com.so4it.common.util.object.Required;
 import com.so4it.test.domain.AbstractTestBuilder;
 
 import java.math.BigDecimal;
+import java.time.Instant;
 
 /**
  * @author Magnus Poromaa {@literal <mailto:magnus.poromaa@so4it.com/>}
@@ -20,6 +21,7 @@ public class OrderEntityTestBuilder extends AbstractTestBuilder<OrderEntity> {
         this.builder
                 .withId("1111111111")
                 .withSsn("1111111111")
+                .withInsertionTimestamp(Instant.now())
                 .withAmount(BigDecimal.TEN);
     }
 

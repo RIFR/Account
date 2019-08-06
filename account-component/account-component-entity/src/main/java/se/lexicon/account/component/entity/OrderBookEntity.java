@@ -32,6 +32,7 @@ public class OrderBookEntity extends IdEntity<String> {
 
     private Boolean sellOrder; // Sell or Buy
 
+    @Allowed(types = {Allowed.Type.NULLABLE})
     private String matchingOrderId;
 
     private OrderBookEntity() {
@@ -44,10 +45,9 @@ public class OrderBookEntity extends IdEntity<String> {
         this.instrument = Required.notNull(builder.instrument,"instrument",builder.isTemplate());
         this.noOfItems = Required.notNull(builder.noOfItems,"noOfItems",builder.isTemplate());
         this.value = Required.notNull(builder.value,"minValue",builder.isTemplate());
-        //this.maxValue = Required.notNull(builder.maxValue,"maxValue",builder.isTemplate());
         this.phase = Required.notNull(builder.phase,"phase",builder.isTemplate());
         this.sellOrder = Required.notNull(builder.sellOrder,"sellOrder",builder.isTemplate());
-        this.matchingOrderId = Required.notNull(builder.matchingOrderId,"matchingOrderId",builder.isTemplate());
+        this.matchingOrderId = builder.matchingOrderId;
     }
 
     @Override
@@ -125,6 +125,14 @@ public class OrderBookEntity extends IdEntity<String> {
         this.sellOrder = sellOrder;
     }
 
+    public String getMatchingOrderId() {
+        return matchingOrderId;
+    }
+
+    private void setMatchingOrderId(String matchingOrderId) {
+        this.matchingOrderId = matchingOrderId;
+    }
+
     public static Builder builder() {
         return new Builder(false);
     }
@@ -188,11 +196,6 @@ public class OrderBookEntity extends IdEntity<String> {
             this.value = value;
             return this;
         }
-
-//        public OrderBookEntity.Builder withMaxValue(Money maxValue) {
-//            this.maxValue = maxValue;
-//            return this;
-//        }
 
         public OrderBookEntity.Builder withPhase(Phase phase) {
             this.phase = phase;

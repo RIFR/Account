@@ -10,6 +10,7 @@ import com.so4it.component.entity.IdEntity;
 import se.lexicon.account.component.domain.OrderBooks;
 
 import java.math.BigDecimal;
+import java.time.Instant;
 
 /**
  *
@@ -25,6 +26,8 @@ public class OrderEntity extends IdEntity<String> {
 
     private BigDecimal amount;
 
+    private Instant insertionTimestamp;
+
     //private OrderBooks orderBookId;
 
     private OrderEntity() {
@@ -34,6 +37,7 @@ public class OrderEntity extends IdEntity<String> {
         this.id = builder.id;
         this.ssn = Required.notNull(builder.ssn,"ssn",builder.isTemplate());
         this.amount = Required.notNull(builder.amount,"amount",builder.isTemplate());
+        this.insertionTimestamp = Required.notNull(builder.insertionTimestamp,"insertionTimestamp",builder.isTemplate());
         //this.orderBookId = Required.notNull(builder.orderBookId,"orderBookId",builder.isTemplate());
     }
 
@@ -64,7 +68,15 @@ public class OrderEntity extends IdEntity<String> {
         this.amount = amount;
     }
 
-//    public OrderBooks getOrderBookId() {
+    public Instant getInsertionTimestamp() {
+        return insertionTimestamp;
+    }
+
+    private void setInsertionTimestamp(Instant insertionTimestamp) {
+        this.insertionTimestamp = insertionTimestamp;
+    }
+
+    //    public OrderBooks getOrderBookId() {
 //        return orderBookId;
 //    }
 //
@@ -91,6 +103,8 @@ public class OrderEntity extends IdEntity<String> {
         // Unique id for the posting
         private BigDecimal amount;
 
+        private Instant insertionTimestamp;
+
         //private OrderBooks orderBookId;
 
         public Builder(boolean template) {
@@ -109,6 +123,11 @@ public class OrderEntity extends IdEntity<String> {
 
         public OrderEntity.Builder withAmount(BigDecimal amount) {
             this.amount = amount;
+            return this;
+        }
+
+        public OrderEntity.Builder withInsertionTimestamp(Instant insertionTimestamp) {
+            this.insertionTimestamp = insertionTimestamp;
             return this;
         }
 

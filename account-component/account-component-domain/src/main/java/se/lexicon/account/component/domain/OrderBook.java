@@ -124,11 +124,6 @@ public class OrderBook extends ValueObject implements Serializable {
             return this;
         }
 
-//        public Builder withMaxValue(Money maxValue){
-//            this.maxValue = maxValue;
-//            return this;
-//        }
-
         public Builder withPhase(Phase phase){
             this.phase = phase;
             return this;

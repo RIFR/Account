@@ -24,11 +24,12 @@ public class OrderBookEntityTestBuilder extends AbstractTestBuilder<OrderBookEnt
                 .withId("1111111111")
                 .withOrderId("1111111111")
                 .withSsn("1111111111")
-                .withMinValue(Money.builder().withAmount(BigDecimal.ONE).withCurrency(Currency.getInstance("SWE")).build())
-                .withMaxValue(Money.builder().withAmount(BigDecimal.TEN).withCurrency(Currency.getInstance("SWE")).build())
+                .withNoOfItems(100)
+                .withValue(Money.builder().withAmount(BigDecimal.ONE).withCurrency(Currency.getInstance("SEK")).build())
                 .withInstrument("ABB")
                 .withPhase(Phase.UNKNOWN)
                 .withSellOrder(false)
+                //.withMatchingOrderId("")
                 .build();
     }
 
@@ -39,6 +40,11 @@ public class OrderBookEntityTestBuilder extends AbstractTestBuilder<OrderBookEnt
 
     public OrderBookEntityTestBuilder withInstrument(String instrument){
         builder.withInstrument(instrument);
+        return this;
+    }
+
+    public OrderBookEntityTestBuilder withNoOfItems(int noOfItems){
+        builder.withNoOfItems(noOfItems);
         return this;
     }
 

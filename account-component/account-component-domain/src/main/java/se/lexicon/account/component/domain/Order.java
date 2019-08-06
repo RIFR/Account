@@ -6,6 +6,7 @@ import com.so4it.common.util.object.ValueObject;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.Instant;
 
 /**
  * @author Magnus Poromaa {@literal <mailto:magnus.poromaa@so4it.com/>}
@@ -23,6 +24,9 @@ public class Order extends ValueObject implements Serializable {
 
     private String ssn;
 
+    // Timestamp from core system when the order was made
+    private Instant insertionTimestamp;
+
     private Order() {
     }
 
@@ -31,6 +35,7 @@ public class Order extends ValueObject implements Serializable {
         this.amount = Required.notNull(builder.amount,"amount");
         this.orderBookId = builder.orderBookId;
         this.ssn = Required.notNull(builder.ssn,"ssn");
+        this.insertionTimestamp = Required.notNull(builder.insertionTimestamp,"insertionTimestamp");
     }
 
 
@@ -42,13 +47,13 @@ public class Order extends ValueObject implements Serializable {
         return ssn;
     }
 
-    public OrderBooks getOrderBookId() {
-        return orderBookId;
-    }
+    public OrderBooks getOrderBookId() { return orderBookId; }
 
     public BigDecimal getAmount() {
         return amount;
     }
+
+    public Instant getInsertionTimestamp() { return insertionTimestamp; }
 
     @Override
     protected Object[] getIdFields() {
@@ -69,6 +74,7 @@ public class Order extends ValueObject implements Serializable {
 
         private String ssn;
 
+        private Instant insertionTimestamp;
 
         public Builder withId(String id){
             this.id = id;
@@ -87,6 +93,11 @@ public class Order extends ValueObject implements Serializable {
 
         public Builder withSsn(String ssn){
             this.ssn = ssn;
+            return this;
+        }
+
+        public Builder withInsertionTimestamp(Instant insertionTimestamp){
+            this.insertionTimestamp = insertionTimestamp;
             return this;
         }
 
