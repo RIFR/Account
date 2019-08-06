@@ -60,7 +60,7 @@ public class OrderComponentServiceImpl implements OrderComponentService {
 
         if (order.getOrderBookId().getFirst()==null) return; //Dummy order?
 
-        orderDao.insert(OrderEntity.builder()
+        OrderEntity orderEntity = orderDao.insert(OrderEntity.builder()
                 .withId(order.getId())
                 .withSsn(order.getSsn())
                 .withAmount(order.getAmount())
@@ -84,14 +84,14 @@ public class OrderComponentServiceImpl implements OrderComponentService {
 
             if (orderBook.getPhase() == Phase.UNKNOWN || orderBook.getPhase() == Phase.PENDING_INCOMING) {
 
-                MatchOrder (order, orderBook);
+                MatchOrder (orderEntity, orderBook);
 
             }
 
         } // End of loop
     }
 
-    private void MatchOrder (Order order, OrderBook orderBook) {
+    private void MatchOrder (OrderEntity order, OrderBook orderBook) {
 
         // GET ALL ORDERBOOKS, FILTER AGAINST ALL OTHERS BUY/SELL with same Instrument
         Set<OrderBookEntity> orderBookEntities = orderBookDao.readAll
@@ -138,6 +138,7 @@ public class OrderComponentServiceImpl implements OrderComponentService {
 
                 // No matching, enter in Dao for later use
                 orderBookDao.insert(OrderBookEntity.builder()
+                        //.withId(orderBook.getId())
                         .withSsn(order.getSsn())
                         .withOrderId(order.getId())
                         .withNoOfItems(noOfItemsToMatch)
@@ -159,6 +160,7 @@ public class OrderComponentServiceImpl implements OrderComponentService {
             noOfItemsMatched = itemsRemaining > 0 ? bestMatchingOrderBook.getNoOfItems() : noOfItemsToMatch;
 
             orderBookDao.insert(OrderBookEntity.builder()
+                    //.withId(orderBook.getId())
                     .withSsn(order.getSsn())
                     .withOrderId(order.getId())
                     .withNoOfItems(noOfItemsMatched)

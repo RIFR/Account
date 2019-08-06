@@ -19,7 +19,7 @@ public class OrderEntityTestBuilder extends AbstractTestBuilder<OrderEntity> {
     public OrderEntityTestBuilder(OrderEntity.Builder builder) {
         this.builder = Required.notNull(builder, "builder");
         this.builder
-                .withId("1111111111")
+                //.withId("1111111111")
                 .withSsn("1111111111")
                 .withInsertionTimestamp(Instant.now())
                 .withAmount(BigDecimal.TEN);

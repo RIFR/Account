@@ -21,7 +21,7 @@ public class OrderBookEntityTestBuilder extends AbstractTestBuilder<OrderBookEnt
     public OrderBookEntityTestBuilder(OrderBookEntity.Builder builder) {
         this.builder = Required.notNull(builder, "builder");
         this.builder
-                .withId("1111111111")
+                //.withId("1111111111")
                 .withOrderId("1111111111")
                 .withSsn("1111111111")
                 .withNoOfItems(100)

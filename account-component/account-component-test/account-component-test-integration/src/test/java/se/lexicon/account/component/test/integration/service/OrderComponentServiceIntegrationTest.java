@@ -74,13 +74,29 @@ public class OrderComponentServiceIntegrationTest {
     public void testMatchOrder() {
         OrderComponentService orderComponentService = AccountComponentServiceIntegrationTestSuite.getImportContext().getBean(OrderComponentService.class);
 
-        Order order1 = OrderTestBuilder.builder().withSsn("111111").build();
+        Order order1 = OrderTestBuilder.builder()
+                //.withId("111111")
+                .withSsn("111111")
+                .withOrderBookId(OrderBooks.valueOf(
+                        new OrderBook.Builder()
+                                //.withId("111111")
+                                .withInstrument("ABB")
+                                .withNoOfItems(100)
+                                .withSellOrder(false)
+                                .withPhase(Phase.UNKNOWN)
+                                .withValue(Money.builder()
+                                        .withAmount((BigDecimal.valueOf(550d)))
+                                        .withCurrency(Currency.getInstance("SEK"))
+                                        .build())
+                                .build()))
+                .build();
+
         Order order2 = OrderTestBuilder.builder()
-                .withId("222222")
+                //.withId("222222")
                 .withSsn("222222")
                 .withOrderBookId(OrderBooks.valueOf(
                                 new OrderBook.Builder()
-                                        .withId("222222")
+                                        //.withId("222222")
                                         .withInstrument("ABB")
                                         .withNoOfItems(100)
                                         .withSellOrder(true)
@@ -93,31 +109,48 @@ public class OrderComponentServiceIntegrationTest {
                         .build();
 
         Order order3 = OrderTestBuilder.builder()
-                .withId("333333")
+                //.withId("333333")
                 .withSsn("333333")
                 .withOrderBookId(OrderBooks.valueOf(
                         new OrderBook.Builder()
-                                .withId("333333")
+                                //.withId("333333")
                                 .withInstrument("ABB")
                                 .withNoOfItems(50)
                                 .withSellOrder(true)
                                 .withPhase(Phase.UNKNOWN)
                                 .withValue(Money.builder()
-                                        .withAmount((BigDecimal.valueOf(500d)))
+                                        .withAmount((BigDecimal.valueOf(480d)))
                                         .withCurrency(Currency.getInstance("SEK"))
                                         .build())
                                 .build()))
                 .build();
 
         Order order4 = OrderTestBuilder.builder()
-                .withId("444444")
+                //.withId("444444")
                 .withSsn("444444")
                 .withOrderBookId(OrderBooks.valueOf(
                         new OrderBook.Builder()
-                                .withId("444444")
+                                //.withId("444444")
                                 .withInstrument("ABB")
                                 .withNoOfItems(50)
                                 .withSellOrder(true)
+                                .withPhase(Phase.UNKNOWN)
+                                .withValue(Money.builder()
+                                        .withAmount((BigDecimal.valueOf(490d)))
+                                        .withCurrency(Currency.getInstance("SEK"))
+                                        .build())
+                                .build()))
+                .build();
+
+        Order order5 = OrderTestBuilder.builder()
+                //.withId("555555")
+                .withSsn("555555")
+                .withOrderBookId(OrderBooks.valueOf(
+                        new OrderBook.Builder()
+                                //.withId("555555")
+                                .withInstrument("ABB")
+                                .withNoOfItems(100)
+                                .withSellOrder(false)
                                 .withPhase(Phase.UNKNOWN)
                                 .withValue(Money.builder()
                                         .withAmount((BigDecimal.valueOf(500d)))
@@ -125,10 +158,6 @@ public class OrderComponentServiceIntegrationTest {
                                         .build())
                                 .build()))
                 .build();
-
-        Order order5 = OrderTestBuilder.builder()
-                .withId("555555")
-                .withSsn("555555").build();
 
         orderComponentService.placeOrder(order1);
         orderComponentService.placeOrder(order2);

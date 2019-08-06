@@ -18,13 +18,13 @@ public class OrderTestBuilder extends AbstractTestBuilder<Order> {
     public OrderTestBuilder(Order.Builder builder) {
         this.builder = Required.notNull(builder, "builder");
         this.builder
-                .withId("1111111111")
+                //.withId("1111111111")
                 .withSsn("1111111111")
                 .withAmount(BigDecimal.TEN)
                 .withInsertionTimestamp(Instant.now())
                 .withOrderBookId (OrderBooks.valueOf(
                         new OrderBook.Builder()
-                            .withId("2222222222")
+                            //.withId("1111111111")
                             .withInstrument("ABB")
                             .withNoOfItems(100)
                             .withSellOrder(false)
